@@ -1,0 +1,13 @@
+name = "Default Dark Create"
+filename = "Default Dark Create 1.20.2-1.21.x.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f88a257555c84dd217df984bf14a56d36f073702"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6871428
+project-id = 1324531

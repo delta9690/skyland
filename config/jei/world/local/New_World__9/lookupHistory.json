@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"dynamictrees:birch_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"dynamictrees:acacia_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

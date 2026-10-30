@@ -1,0 +1,13 @@
+name = "Create: Simulated Thrusters"
+filename = "create_simulated_thrusters-1.21.1-NeoForge-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bddb8bcbfe49231e196d1d40c8178aaf4dbebae5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8110370
+project-id = 1546743

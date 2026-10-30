@@ -1,0 +1,795 @@
+{
+  "global": {
+    "enabled": true,
+    "vein_size_multiplier": 0.85,
+    "attempt_multiplier": 1.0,
+    "nether_generation_enabled": true,
+    "auto_discover_modded_ores": true,
+    "auto_enable_discovered_modded_ores": true,
+    "debug_logging": false
+  },
+  "overrides": {
+    "minecraft:coal_ore": {
+      "enabled": true,
+      "vein_size": 36,
+      "attempts": 1,
+      "min_y": 48,
+      "max_y": 160,
+      "dimension": "overworld"
+    },
+    "minecraft:iron_ore": {
+      "enabled": true,
+      "vein_size": 34,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 96,
+      "dimension": "overworld"
+    },
+    "minecraft:deepslate_iron_ore": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 0,
+      "dimension": "overworld"
+    },
+    "minecraft:copper_ore": {
+      "enabled": true,
+      "vein_size": 30,
+      "attempts": 1,
+      "min_y": -8,
+      "max_y": 80,
+      "dimension": "overworld"
+    },
+    "minecraft:gold_ore": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -48,
+      "max_y": 32,
+      "dimension": "overworld"
+    },
+    "minecraft:redstone_ore": {
+      "enabled": true,
+      "vein_size": 18,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 0,
+      "dimension": "overworld"
+    },
+    "minecraft:deepslate_redstone_ore": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 0,
+      "dimension": "overworld"
+    },
+    "minecraft:lapis_ore": {
+      "enabled": true,
+      "vein_size": 16,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 32,
+      "dimension": "overworld"
+    },
+    "minecraft:deepslate_lapis_ore": {
+      "enabled": true,
+      "vein_size": 18,
+      "attempts": 1,
+      "min_y": -32,
+      "max_y": 16,
+      "dimension": "overworld"
+    },
+    "minecraft:diamond_ore": {
+      "enabled": true,
+      "vein_size": 10,
+      "attempts": 1,
+      "min_y": -48,
+      "max_y": 0,
+      "dimension": "overworld"
+    },
+    "minecraft:deepslate_diamond_ore": {
+      "enabled": true,
+      "vein_size": 12,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": -16,
+      "dimension": "overworld"
+    },
+    "minecraft:emerald_ore": {
+      "enabled": true,
+      "vein_size": 10,
+      "attempts": 1,
+      "min_y": 48,
+      "max_y": 180,
+      "biome_filter": [
+        "#minecraft:is_mountain"
+      ],
+      "dimension": "overworld"
+    },
+    "minecraft:deepslate_emerald_ore": {
+      "enabled": true,
+      "vein_size": 12,
+      "attempts": 1,
+      "min_y": -16,
+      "max_y": 96,
+      "biome_filter": [
+        "#minecraft:is_mountain"
+      ],
+      "dimension": "overworld"
+    },
+    "minecraft:nether_gold_ore": {
+      "enabled": true,
+      "vein_size": 22,
+      "attempts": 1,
+      "min_y": 10,
+      "max_y": 96,
+      "dimension": "the_nether"
+    },
+    "minecraft:nether_quartz_ore": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": 20,
+      "max_y": 110,
+      "dimension": "the_nether"
+    },
+    "minecraft:ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 20,
+      "dimension": "the_nether"
+    },
+    "chipped:curly_ancient_debris_pillar": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiny_layered_ancient_debris_slabs": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cobbled_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:vertical_disordered_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiled_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:vertical_cut_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:crying_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ancient_debris_pillar": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cracked_disordered_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:smooth_ancient_debris_column": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:bordered_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ancient_debris_mini_tiles": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:prismal_ancient_debris_remnants": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cut_ancient_debris_column": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "create_new_age:thorium_ore": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "chipped:spider_ancient_debris_carving": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:sad_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:polished_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:rough_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:duh_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:spiraled_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiled_bordered_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:offset_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:runic_carved_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:checkered_ancient_debris_tiles": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:smooth_inlayed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ancient_debris_scales": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:rounded_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:weathered_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:thick_inlayed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:smoothed_double_inlayed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:smooth_ringed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "create:zinc_ore": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "chipped:angry_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:sanded_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:fine_ancient_debris_pillar": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:carved_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:small_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ancient_debris_pillar_top": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:massive_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:pillar_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:unamused_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:etched_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:simple_ancient_debris_pillar": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:ornate_ancient_debris_pillar": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cut_blank_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:trodden_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:inscribed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiny_brick_bordered_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:overlapping_ancient_debris_tiles": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cracked_flat_ancient_debris_tiles": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:eroded_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:glad_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:brick_bordered_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:stacked_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "create:deepslate_zinc_ore": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "chipped:engraved_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:inlayed_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:blank_ancient_debris_carving": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:loded_ancient_debris": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:cracked_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiled_ancient_debris_column": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiny_layered_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:edged_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:creeper_ancient_debris_carving": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:tiny_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:layed_ancient_debris_bricks": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "chipped:flat_ancient_debris_tiles": {
+      "enabled": true,
+      "vein_size": 4,
+      "attempts": 1,
+      "min_y": 8,
+      "max_y": 22,
+      "dimension": "the_nether"
+    },
+    "immersiveengineering:deepslate_ore_uranium": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:ore_lead": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:ore_uranium": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:ore_aluminum": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:deepslate_ore_lead": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:deepslate_ore_silver": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:deepslate_ore_aluminum": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:deepslate_ore_nickel": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:ore_nickel": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "immersiveengineering:ore_silver": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "createpropulsion:platinum_ore": {
+      "enabled": true,
+      "vein_size": 24,
+      "attempts": 1,
+      "min_y": -24,
+      "max_y": 72,
+      "dimension": "overworld"
+    },
+    "createpropulsion:deepslate_platinum_ore": {
+      "enabled": true,
+      "vein_size": 20,
+      "attempts": 1,
+      "min_y": -64,
+      "max_y": 8,
+      "dimension": "overworld"
+    }
+  }
+}

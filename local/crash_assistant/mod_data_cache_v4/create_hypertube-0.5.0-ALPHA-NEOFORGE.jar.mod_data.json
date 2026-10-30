@@ -1,0 +1,1 @@
+{"jarName":"create_hypertube-0.5.0-ALPHA-NEOFORGE.jar","modId":"create_hypertube","name":"Create Hypertube","version":"0.5.0-ALPHA","mixinConfigs":["conflict_fix.mixins.json","create_hypertube.mixins.json","compat.mixins.json"],"jarJarMods":[],"curseForgeHash":3758804167,"modrinthHash":"5cf87526e5e02b569b3efd0fadc1677026b802ef"}

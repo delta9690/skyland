@@ -1,0 +1,4 @@
+[network]
+	# Default: 3
+	# Range: 1 ~ 20
+	sync_period = 3

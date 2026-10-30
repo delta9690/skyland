@@ -1,0 +1,17 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"create_confectionery:black_chocolate_candy_2"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulatedcoasters:coaster_cart"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulatedcoasters:coaster_track"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:empty_circuit"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:basin_heater"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:redstone_relay"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:bjt_npn"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:regulator_tube"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:crt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:display_module"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:acid"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:battery"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:acid_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powergrid:modular_display"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

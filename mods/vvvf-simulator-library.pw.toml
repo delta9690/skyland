@@ -1,0 +1,13 @@
+name = "VVVF-Simulator-Library"
+filename = "vvvf_simulator_lib-neoforge-1.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "af61ab70de1b5220f63c56b148c726a845528e3e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8642555
+project-id = 1638825

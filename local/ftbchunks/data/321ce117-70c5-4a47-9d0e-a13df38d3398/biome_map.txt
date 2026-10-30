@@ -1,0 +1,17 @@
+#6F6 minecraft:badlands
+#05B minecraft:bamboo_jungle
+#47F minecraft:birch_forest
+#008 minecraft:desert
+#010 minecraft:forest
+#527 quark:glimmering_weald
+#4B0 minecraft:jungle
+#1DF minecraft:old_growth_birch_forest
+#3DC minecraft:plains
+#67B minecraft:savanna
+#3AF minecraft:sparse_jungle
+#51A minecraft:stony_shore
+#4D3 minecraft:swamp
+#463 aeroscapes:void_shores
+#7ED aeroscapes:voidsea
+#579 minecraft:windswept_savanna
+#1C9 minecraft:wooded_badlands

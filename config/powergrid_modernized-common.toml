@@ -1,0 +1,190 @@
+#The electrical inspector
+[inspector]
+	#Each second a player has done electrical work in the last work window, the inspector has a one-in-this chance of spawning.
+	#600 is about one visit per ten minutes of wiring. 0 disables the visits (spawn eggs still work).
+	# Default: 600
+	# Range: 0 ~ 1000000
+	spawn_chance = 600
+	#Seconds after a visit before the same player can get another.
+	# Default: 600
+	# Range: 0 ~ 86400
+	cooldown_seconds = 600
+	#How long after a player's last electrical work they still count as working.
+	# Default: 300
+	# Range: 1 ~ 86400
+	work_window_seconds = 300
+	#Emeralds that make him forget he asked.
+	# Default: 8
+	# Range: 1 ~ 64
+	bribe_emeralds = 8
+	#An inspector who is already about, idle or leaving, asks anyone who does electrical work within this many blocks of him.
+	# Default: 16
+	# Range: 1 ~ 64
+	notice_range = 16
+
+#Village generation
+[village]
+	#Every newly generated village gets an Electrical Training Center a few blocks east of its well or meeting point.
+	training_center_at_center = true
+	#Weight of extra training centers in every village's house pool (vanilla house weights total 70 to 90). 0 adds none.
+	# Default: 3
+	# Range: 0 ~ 100
+	training_center_weight = 3
+
+#Copper scrap
+[scrap]
+	#Chance that pulling a wire into conduit, or editing a splice, leaves a piece of copper scrap.
+	# Default: 0.12
+	# Range: 0.0 ~ 1.0
+	chance = 0.12
+
+#The push broom
+[push_broom]
+	#Whether push brooms spawn naturally at night. Spawn eggs always work.
+	natural_spawns = true
+
+#Cable chains
+[cable_chain]
+	#Longest run, in metres, a cable chain can be strung over (measured as the anchors hang in the world).
+	# Default: 32
+	# Range: 4 ~ 128
+	max_length = 32
+
+#Rack and pinion
+[pinion]
+	#Pitch radius of the pinion in metres: the body moves at the shaft speed times this (0.5 means 64 rpm walks 3.35 m/s).
+	# Default: 0.5
+	# Range: 0.05 ~ 4.0
+	pitch_radius = 0.5
+	#Hold the body exactly at the rim speed, like teeth in a rack: a stopped pinion locks the body on the rack, a
+	#turning one drags it along however heavy it is, and the body is kept from turning. Solid blocks still stop it.
+	#gain and max_acceleration are not used while locked. Off, the pinion pushes softly within gain, max_acceleration and force.
+	lock = true
+	#How hard the pinion corrects the body's speed each physics step: 1 removes the whole speed error at once, lower is softer.
+	# Default: 0.5
+	# Range: 0.01 ~ 1.0
+	gain = 0.5
+	#Most the pinion can accelerate the body, in metres per second squared, however heavy it is.
+	# Default: 12.0
+	# Range: 0.1 ~ 1000.0
+	max_acceleration = 12.0
+	#Locked: how far past the rim speed the pinion may lean in, as a multiple of the rim speed, while the guides keep
+	#dragging the body short of it (2 means up to three times the rim speed). Unlocked: multiplier on the whole push.
+	#Raise it when a carriage sticks or crawls, lower it if it lurches when the sticking lets go.
+	# Default: 2.0
+	# Range: 0.01 ~ 100.0
+	force = 2.0
+	#Flip the direction a given shaft rotation walks the body, if it goes the wrong way for you.
+	invert = false
+
+#Energy accounting between Create stress, Forge Energy and Power Grid watts
+[energy]
+	#Watts one Create stress unit is worth; the three-phase motor hands out stress it has bought at this rate.
+	#0 uses Power Grid's own figure for its motors and generators (torqueForStress over its conversion constant,
+	#about 0.159 W per SU: a kilowatt buys about 6,300 SU). A loop inverter -> motor -> New Age generator -> inverter
+	#stays lossy while this is above New Age's 0.029296875 FE per SU per tick divided by the FE per watt: with
+	#Power Grid's 10 FE per watt that floor is 0.003 W per SU. Below it the loop makes energy.
+	# Default: 0.0
+	# Range: 0.0 ~ 1000.0
+	watts_per_su = 0.0
+	#Fraction of the electrical power the three-phase motor turns into stress; the rest is loss.
+	# Default: 0.9
+	# Range: 0.05 ~ 1.0
+	motor_efficiency = 0.9
+	#Most stress per rpm a three-phase motor can carry, however much it is fed (1024 is four creative motors at 256 rpm).
+	# Default: 1024.0
+	# Range: 1.0 ~ 1000000.0
+	motor_max_capacity = 1024.0
+
+#FE inverter
+[inverter]
+	#FE the inverter stores. It must cover one tick of its load, and a brownout ends once it holds a second's worth again.
+	# Default: 1000000
+	# Range: 1000 ~ 1000000000
+	buffer = 1000000
+	#Most FE it accepts per tick from cables.
+	# Default: 100000
+	# Range: 1 ~ 1000000000
+	max_input = 100000
+	#FE taken each tick for every watt delivered on the lines: the figure Power Grid's own FE Inverter and Device
+	#Connector use (its forgeEnergyPerWatt, 10 by default: a watt is 10 FE a tick, 1 kW is 10,000 FE a tick).
+	#0 follows Power Grid's setting, so a loop inverter -> lines -> Device Connector -> FE can only lose energy.
+	#Set it only to price this inverter apart from Power Grid's.
+	# Default: 0.0
+	# Range: 0.0 ~ 1000000.0
+	fe_per_watt = 0.0
+	#Fraction of the FE that becomes AC power; the rest is loss.
+	# Default: 0.95
+	# Range: 0.05 ~ 1.0
+	efficiency = 0.95
+
+#RF connector: three-phase in, Forge Energy out
+[rf_connector]
+	#FE the connector holds. What is missing from it, at the FE per watt, is the power it asks the lines for.
+	# Default: 100000
+	# Range: 1000 ~ 1000000000
+	buffer = 100000
+	#Most FE it hands out per tick, over all its sides together. Also caps what it will draw.
+	# Default: 100000
+	# Range: 1 ~ 1000000000
+	max_output = 100000
+	#Fraction of the power drawn that becomes FE; the rest is loss.
+	# Default: 0.95
+	# Range: 0.05 ~ 1.0
+	efficiency = 0.95
+
+#Laser rangefinder
+[rangefinder]
+	#Farthest any rangefinder can be set to look, in blocks.
+	# Default: 512.0
+	# Range: 1.0 ~ 4096.0
+	max_range = 512.0
+	#Range of a rangefinder that has not been given its own, in blocks. Also the comparator's zero point.
+	# Default: 128.0
+	# Range: 1.0 ~ 4096.0
+	default_range = 128.0
+	#Ticks between measurements. 1 is every tick; a moving crane reads smoothly at 2.
+	# Default: 2
+	# Range: 1 ~ 100
+	interval = 2
+
+#Radios, antennas, coax and metering
+[radio]
+	#Reach of a dish in blocks; a link needs both dishes within reach of each other.
+	# Default: 2000
+	# Range: 16 ~ 100000
+	dish_range = 2000
+	#Reach of a sector antenna in blocks at a 120 degree beamwidth; a narrower beam reaches further, by the square root of 120 over the beamwidth.
+	# Default: 1000
+	# Range: 16 ~ 100000
+	sector_range = 2000
+	#Reach of an omni (cell) antenna in blocks. A link needs both ends within reach, so this is the radius a cell is served to.
+	# Default: 500
+	# Range: 16 ~ 100000
+	cell_range = 2000
+	#Degrees off its aim a dish still sees its partner.
+	# Default: 1.0
+	# Range: 0.1 ~ 90.0
+	dish_beam_degrees = 1.0
+	#Cell antennas one sector carries at once.
+	# Default: 16
+	# Range: 1 ~ 256
+	sector_clients = 16
+	#Whether blocks between two antennas break the link (a ray through air from one to the other).
+	line_of_sight = false
+	#Blocks of coax an antenna may be fed through at full reach.
+	# Default: 16
+	# Range: 1 ~ 1024
+	coax_full_range_length = 16
+	#Blocks of coax at which the reach has fallen to half; it keeps falling beyond.
+	# Default: 64
+	# Range: 2 ~ 4096
+	coax_half_range_length = 64
+	#Blocks a collector hears meter antennas over.
+	# Default: 2000
+	# Range: 16 ~ 100000
+	meter_range = 2000
+	#Seconds between a meter antenna's reports.
+	# Default: 10
+	# Range: 1 ~ 3600
+	meter_report_seconds = 10

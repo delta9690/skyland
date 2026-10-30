@@ -1,0 +1,13 @@
+name = "Live Texture Editor"
+filename = "textureeditor-1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9abfcc6770f6820ea71f33aa22f38cef7cec2b35"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7757578
+project-id = 1472307

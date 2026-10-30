@@ -1,0 +1,17 @@
+#05B minecraft:bamboo_jungle
+#25C terralith:basalt_cliffs
+#556 minecraft:beach
+#184 terralith:brushland
+#1BE terralith:cave/underground_jungle
+#34D minecraft:deep_lukewarm_ocean
+#008 minecraft:desert
+#4B0 minecraft:jungle
+#79A minecraft:lukewarm_ocean
+#498 minecraft:lush_caves
+#5FF minecraft:river
+#307 terralith:rocky_jungle
+#3AF minecraft:sparse_jungle
+#297 terralith:tropical_jungle
+#28B terralith:volcanic_peaks
+#2B7 minecraft:warm_ocean
+#531 terralith:warm_river

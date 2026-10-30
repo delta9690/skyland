@@ -1,0 +1,13 @@
+{
+	"shown_reasons": {
+		"Create6Addons": true,
+		"MissingUnsupportedDependencies": true,
+		"MixinApply": true,
+		"CtovWithoutLithostitched": true
+	},
+	"analysis": {
+		"jdeps": {
+			"include_nested": true
+		}
+	}
+}

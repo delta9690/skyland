@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"create:cardboard_package_10x8"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_enchantment_industry:printer"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

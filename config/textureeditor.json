@@ -1,0 +1,26 @@
+{
+  "defaultZoom": 12,
+  "gridOnByDefault": true,
+  "defaultTool": "PENCIL",
+  "keybinds": {
+    "brush": 86,
+    "eraser": 69,
+    "undo": 89,
+    "line": 76,
+    "grid": 71,
+    "redo": 85,
+    "pencil": 66,
+    "fill": 70,
+    "eyedropper": 73,
+    "browse": 341
+  },
+  "showToolHints": true,
+  "autoApplyLive": true,
+  "confirmResetAll": true,
+  "maxUndoSteps": 50,
+  "colorHistorySize": 20,
+  "brushVariation": 0.15,
+  "useExternalEditor": true,
+  "selectedEditorName": "",
+  "externalEditorCustomPath": ""
+}

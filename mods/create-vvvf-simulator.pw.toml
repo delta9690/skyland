@@ -1,0 +1,13 @@
+name = "Create: VVVF-Simulator"
+filename = "create_vvvf_simulator-neoforge-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ee32367014a9ec31afa2efe4c0096e2ee307b25d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8610172
+project-id = 1580570

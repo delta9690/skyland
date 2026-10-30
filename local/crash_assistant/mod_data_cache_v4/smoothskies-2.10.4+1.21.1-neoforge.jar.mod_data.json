@@ -1,0 +1,1 @@
+{"jarName":"smoothskies-2.10.4+1.21.1-neoforge.jar","modId":"smoothskies","name":"Smooth Skies","version":"2.10.4","mixinConfigs":["smoothskies.mixins.json"],"jarJarMods":[{"jarName":"mixinconstraints-1.0.8.jar","mixinConfigs":[],"jarJarMods":[],"pathFromJarJar":"/META-INF/jars/"}],"curseForgeHash":1029089079,"modrinthHash":"c7c7bdb618123a12a62874eb24e8931c1cb9a0f0"}

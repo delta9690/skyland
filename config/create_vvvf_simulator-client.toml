@@ -1,0 +1,169 @@
+[environment]
+	# Default: 3
+	# Range: 1 ~ 20
+	eval_period = 3
+
+[audio]
+	# Default: 44100
+	# Range: 8000 ~ 192000
+	sample_rate = 44100
+	# Default: 4
+	# Range: 2 ~ 8
+	buffer_cnt = 4
+	# Default: 4096
+	# Range: 1024 ~ 65536
+	buffer_size = 4096
+	# Default: 1024
+	# Range: 256 ~ 4096
+	conv_size = 1024
+	# Default: 131072
+	# Range: 4096 ~ 1048576
+	table_size = 131072
+	# Default: 262144
+	# Range: 65536 ~ 1048576
+	tail_size = 262144
+
+[speed_smoother]
+	# Default: 5
+	# Range: 1 ~ 20
+	speeds_length = 5
+	# Default: 1.05
+	# Range: 1.0 ~ 1.2
+	max_acc_ratio = 1.05
+
+[audio_volumes]
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	main_amp = 1.0
+	# Default: 0.6
+	# Range: 0.0 ~ 2.0
+	gas_amp = 0.6
+	# Default: 0.4
+	# Range: 0.0 ~ 2.0
+	switch_amp = 0.4
+	# Default: 0.04
+	# Range: 0.0 ~ 0.2
+	base_amp = 0.04
+	# Default: 0.025
+	# Range: 0.0 ~ 0.2
+	brown_amp = 0.025
+	# Default: 0.6
+	# Range: 0.0 ~ 2.0
+	vvvf_amp = 0.6
+	# Default: 3.0
+	# Range: 0.0 ~ 10.0
+	bg_wind_amp = 3.0
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	main_wind_amp = 0.15
+
+[spread_distance]
+	# Default: 32.0
+	# Range: 0.0 ~ 256.0
+	near_distance = 32.0
+	# Default: 96.0
+	# Range: 0.0 ~ 256.0
+	far_distance = 96.0
+
+	[advanced.equipment_sound]
+		# Default: 0.05
+		# Range: 0.0 ~ 0.2
+		brown_sigma = 0.05
+		# Default: 2.0
+		# Range: 0.0 ~ 10.0
+		brown_range = 2.0
+		# Default: 140.0
+		# Range: 0.0 ~ 500.0
+		base_current_f = 140.0
+
+		[advanced.equipment_sound.base_harmonic]
+			# Default: 0.189
+			# Range: 0.0 ~ 1.0
+			first_amp = 0.189
+			# Default: 0.223
+			# Range: 0.0 ~ 1.0
+			second_amp = 0.223
+			# Default: 0.097
+			# Range: 0.0 ~ 1.0
+			third_amp = 0.097
+			# Default: 0.065
+			# Range: 0.0 ~ 1.0
+			fourth_amp = 0.065
+			# Default: 0.538
+			# Range: 0.0 ~ 6.2832
+			first_phase = 0.538
+			# Default: 0.979
+			# Range: 0.0 ~ 6.2832
+			second_phase = 0.979
+			# Default: 1.98
+			# Range: 0.0 ~ 6.2832
+			third_phase = 1.98
+			# Default: 0.08
+			# Range: 0.0 ~ 6.2832
+			fourth_phase = 0.08
+
+	[advanced.vvvf_sound]
+		# Default: 19
+		# Range: 0 ~ 500
+		first_gear = 19
+		# Default: 120
+		# Range: 0 ~ 500
+		second_gear = 120
+		# Default: 115.0
+		# Range: 0.0 ~ 500.0
+		max_speed_f = 115.0
+		# Default: -2.0
+		# Range: -20.0 ~ 20.0
+		motor_db = -2.0
+		# Default: -2.5
+		# Range: -20.0 ~ 20.0
+		gear_harmonic_db = -2.5
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		dry_wet_ratio = 0.0
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		line_train_ratio = 0.0
+
+	[advanced.bg_wind_sound]
+		# Default: 0.99
+		# Range: 0.0 ~ 1.0
+		pink_r0 = 0.99
+		# Default: 0.3
+		# Range: 0.0 ~ 2.0
+		wind_base_amp = 0.3
+		# Default: 0.2
+		# Range: 0.0 ~ 2.0
+		wind_mod_f = 0.2
+		# Default: 0.4
+		# Range: 0.0 ~ 2.0
+		wind_mod_depth = 0.4
+		# Default: 800.0
+		# Range: 0.0 ~ 2000.0
+		bg_shear_base = 800.0
+		# Default: 400.0
+		# Range: 0.0 ~ 2000.0
+		bg_shear_range = 400.0
+		# Default: 0.8
+		# Range: 0.0 ~ 2.0
+		bg_shear_rate = 0.8
+		# Default: 250.0
+		# Range: 0.0 ~ 2000.0
+		hp_cutoff = 250.0
+
+	[advanced.main_wind_sound]
+		# Default: 0.65
+		# Range: 0.0 ~ 2.0
+		main_cauchy_amp = 0.65
+		# Default: 700.0
+		# Range: 0.0 ~ 2000.0
+		main_center_f = 700.0
+		# Default: 0.05
+		# Range: 0.0 ~ 0.2
+		main_cauchy_gamma = 0.05
+		# Default: 0.15
+		# Range: 0.0 ~ 0.2
+		main_mod_f = 0.15
+		# Default: 0.3
+		# Range: 0.0 ~ 2.0
+		main_mod_depth = 0.3

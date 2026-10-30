@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"immersive_weathering:nulch_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:stone_pressure_plate"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

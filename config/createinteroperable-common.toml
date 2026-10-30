@@ -1,0 +1,181 @@
+[refurbishedFurniture]
+	#ON by default. Refurbished Furniture sinks / baths / toilets no longer
+	#fill for free: right-click bare-handed to pull water from an adjacent
+	#supply (a tank, a drum, a Create pipe end) into the fixture; hold to keep
+	#filling. This overrides Refurbished Furniture's own dispenseWater option.
+	#Set false to restore Refurbished Furniture's behaviour.
+	requireSupply = true
+	#Millibuckets drawn into the fixture per right-click.
+	# Default: 250
+	# Range: 1 ~ 1000000
+	fillStepMb = 250
+
+[sink]
+	#ON by default. Let's Do (Farm & Charm / Candlelight / Bakery) sinks and
+	#the Alpine Whispers bathtub no longer fill for free:
+	#Sinks: pipes (Create, or any mod exposing a fluid handler on the bottom
+	#face) feed an internal buffer; the player fills the basin by right-clicking
+	#the faucet when the buffer holds at least fillCostMb.
+	#Bathtub: right-click (hold) draws water from an adjacent supply until full.
+	#A no-op unless one of those mods is installed. Set false to restore their
+	#vanilla behaviour.
+	requirePipeSupply = true
+	#Capacity of the sink's internal supply buffer, in millibuckets.
+	# Default: 2000
+	# Range: 1 ~ 1000000
+	bufferCapacityMb = 2000
+	#Millibuckets drawn from the buffer each time the player fills the basin.
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	fillCostMb = 1000
+	#Also let players top up the buffer by hand with a filled bucket.
+	allowManualBucketFill = true
+
+[bathtub]
+	#Millibuckets a full Alpine Whispers bathtub holds. Larger = slower to fill.
+	# Default: 3000
+	# Range: 1 ~ 1000000
+	capacityMb = 3000
+	#Millibuckets pulled from an adjacent supply per right-click while filling
+	#the bathtub. Hold right-click to keep filling.
+	# Default: 100
+	# Range: 1 ~ 1000000
+	fillStepMb = 100
+
+[lamps]
+	#ON by default. Let's Do Furniture / Candlelight lamps and street lanterns,
+	#Alpine Whispers fairy lights, Another Furniture lamps, and Iden's Decor Wall Lamp /
+	#Flood Lamp / Floodlight / Fluorescent Light Block become Crayfish
+	#electricity consumers: unwired or unpowered = dark, and a lit lamp draws
+	#3 W (12 V). Right-click (Another Furniture) or sneak-right-click (Let's Do)
+	#toggles a lamp's switch. A no-op unless one of those mods is installed. Set
+	#false to hand every lamp straight back to its own mod (no block entity
+	#attached); Another Furniture lamps also regain their redstone response.
+	#Also makes new Iden's Decor lights (Pliers-configurable) place in their
+	#Refurbished mode when Refurbished Furniture is installed.
+	requirePower = true
+
+[beachpartyAppliances]
+	#ON by default. Let's Do Beachparty's Radio and Mini Fridge become
+	#Crayfish electricity consumers: the Radio only plays while powered (10 W,
+	#12 V, billed only while a track plays) and the Mini Fridge only ferments
+	#while powered (85 W, 120 V, billed whenever linked). A no-op unless
+	#Beachparty is installed. Set false to restore their vanilla behaviour.
+	requirePower = true
+
+[bibliocraftAppliances]
+	#ON by default. Bibliocraft's Fancy Crafter no longer auto-crafts from
+	#redstone alone: it needs a live rail from a Domestic Electrical Board
+	#(100 W, 120 V), billed only while it has a recipe staged. The menu and
+	#hopper automation are never blocked, even unpowered. A no-op unless
+	#Bibliocraft is installed. Set false to hand it straight back to
+	#Bibliocraft's own redstone behaviour.
+	requirePower = true
+
+[bibliocraftLanterns]
+	#ON by default. Caps Bibliocraft's Fancy Lantern (every gold/iron,
+	#clear/colored, regular/soul flavor) at a vanilla Soul Lantern's light
+	#level (10) at most — the 'regular' flavors otherwise register at a full
+	#15, matching vanilla's own Lantern. A no-op unless Bibliocraft is
+	#installed. Set false to restore Bibliocraft's own light levels.
+	capLight = true
+
+[crnDisplays]
+	#ON by default. A freestanding Create Train Navigator Advanced Display
+	#renders its texts only while a live rail from a Domestic Electrical Board
+	#reaches it (8 W, 12 V); unwired or unpowered = blank screen. Wiring any
+	#one block of a multi-block board powers the whole board. Displays built
+	#onto a moving contraption are never touched. A no-op unless Create Train
+	#Navigator is installed. Set false to hand displays back to Create Train
+	#Navigator (no node attached).
+	requirePower = true
+
+[vistaTvs]
+	#ON by default. A Vista (cameramod) TV — single or grown into a
+	#connected N x N wall — becomes a Domestic Electrical Board electricity
+	#consumer instead of a plain redstone lamp: no live rail = always off, no
+	#matter what redstone signal reaches it. Once a rail reaches it, it is on
+	#by default with NO redstone needed; redstone is repurposed as a manual
+	#kill switch that forces the screen off without cutting power. Billed only
+	#while actually on (8 W per tile, 12 V, n^2 for a grown wall). A no-op
+	#unless Vista is installed. Set false to hand every TV straight back to
+	#Vista's own redstone-only behaviour.
+	requirePower = true
+
+[idenComputer]
+	#ON by default. Iden's Decor's Computer becomes a Domestic Electrical
+	#Board electricity consumer: it only shows an inserted floppy disk's text
+	#while a live rail reaches it (15 W, 12 V, billed only while a disk is in).
+	#Disks still insert and eject unpowered. A no-op unless Iden's Decor is
+	#installed. Set false to hand the computer straight back to Iden's Decor.
+	requirePower = true
+
+[mtsAaSpotlight]
+	#PURELY EXPERIMENTAL: patches Immersive Vehicles internals, untested in real
+	#play, and may break on any Immersive Vehicles update.
+	#ON by default. An Immersive Vehicles (MTS Official Content Pack) AA Base
+	#Plate placed on the ground gets a power terminal on one corner, wireable to
+	#a Domestic Electrical Board like any appliance. The AA Spotlight mounted on
+	#it only lights its beam, auto-rotates or traverses while a live rail reaches
+	#the plate: 6 kW on the 120 V rail while lit (+5% while auto-rotating), so
+	#it needs a heavy supply. Unpowered, it stays dark and still and shows
+	#"Missing power". Spotlights on vehicles, and the AA guns, are untouched. A
+	#no-op unless Immersive Vehicles is installed. Set false to hand the
+	#Spotlight straight back to Immersive Vehicles (no power needed).
+	requirePower = true
+
+[mtsPoleLights]
+	#PURELY EXPERIMENTAL: patches Immersive Vehicles internals, untested in real
+	#play, and may break on any Immersive Vehicles update.
+	#ON by default. Every Immersive Vehicles pole block and Signal Controller
+	#becomes a wireable Domestic Electrical Board node (a bare pole is a free wire
+	#junction; the Signal Controller draws nothing for now). Street lights,
+	#flashing signals, traffic and crossing signals mounted on a pole only light
+	#while a live rail reaches that pole block: unpowered, every lamp on them is
+	#dark and street lights stop lighting the world. 100 W per street-light-type
+	#component, 25 W per traffic-signal-type component, on the 120 V rail. Signs
+	#are untouched. A no-op unless Immersive Vehicles is installed. Set false to
+	#hand every pole light straight back to Immersive Vehicles (no power needed).
+	requirePower = true
+
+[aircon]
+	#A no-op unless Create: Pipes n Physics is installed. With it, the Aircon
+	#Motor acts as its own pump: the cold-air face pushes cold air out and the
+	#hot-air face sucks hot air in, so an AC loop needs no pumps along its pipes.
+	#This is the pump strength at full power, on Pipes n Physics' Create-RPM
+	#scale (256 = the fastest a Mechanical Pump turns). It scales down with the
+	#motor's power. 0 disables it and leaves the motor as a plain tank.
+	# Default: 256.0
+	# Range: 0.0 ~ 256.0
+	motorPumpRpm = 256.0
+
+[temperatureMods]
+	#Temperature Mods should affect Power Grid and Electro Energetics devices.
+	#OFF by default. When on, and a temperature mod (Cold Sweat) is installed, the
+	#temperature around a Power Grid or Electro Energetics device is the temperature
+	#mod's: devices in hot places overheat sooner and devices in cold places have
+	#more headroom (Power Grid's Thermometer shows the same). When off, both mods
+	#use their own heat models as if no temperature mod were installed. Cold
+	#Sweat's effects on players (heaters, radiators, aircon) are not affected.
+	affectGridDevices = false
+
+[telephoneVoice]
+	#A no-op unless Simple Voice Chat is installed. While a telephone call is
+	#answered, players speaking near either phone are heard from the other one.
+	#Set false to turn the relay off.
+	relayEnabled = true
+	#Blocks around a phone in which a player's voice is picked up and carried
+	#down the line. Whispering picks up half this distance.
+	# Default: 5.0
+	# Range: 1.0 ~ 32.0
+	captureRadius = 5.0
+	#Blocks around the far phone within which the carried voice can be heard.
+	# Default: 8.0
+	# Range: 1.0 ~ 64.0
+	playbackRange = 8.0
+	#A faint hiss with the odd soft crackle, played from both phones for as long as
+	#a call is answered - mild by default. 0 turns it off, 1 is roughly four times
+	#as loud as the default.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	lineNoise = 0.25

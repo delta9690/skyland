@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "delta9690",
+      "uniqueId": "9e0fbacf-bfa0-4b79-bad4-f45770048d94"
+    },
+    "time": 1789752866036,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/tbgC3JEYdy"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "delta9690",
+      "uniqueId": "9e0fbacf-bfa0-4b79-bad4-f45770048d94"
+    },
+    "time": 1789752863926,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/5xECFNMXGy"
+    }
+  }
+]

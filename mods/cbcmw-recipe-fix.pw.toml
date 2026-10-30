@@ -1,0 +1,13 @@
+name = "CBCMW recipe fix"
+filename = "CBCMW recipe fix 0.0.2a.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e2893bbe68abcbf405f1990f40abfef1ddca6577"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8379064
+project-id = 1598498

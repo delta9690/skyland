@@ -1,0 +1,13 @@
+name = "CBC: Terminal Ballistics (Offiical)"
+filename = "cbc_terminal_ballistics-0.3.5-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "53042ac832b5ecbb7d9ed61723fbf58a6d1cfd99"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8622184
+project-id = 1639867

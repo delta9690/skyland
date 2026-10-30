@@ -1,0 +1,13 @@
+name = "(Bee's) Fine Armory"
+filename = "Fine Armoury v1.8.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ed41729971231834724189e49748140bf8bfc7e7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8058232
+project-id = 983707

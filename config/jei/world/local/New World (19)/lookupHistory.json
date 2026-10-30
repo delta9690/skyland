@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"minecraft:acacia_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"moderntrainparts:pantograph"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"moderntrainparts:unfired_insulator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"moderntrainparts:gray_container"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"moderntrainparts:bulk_storage"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"moderntrainparts:insulator"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

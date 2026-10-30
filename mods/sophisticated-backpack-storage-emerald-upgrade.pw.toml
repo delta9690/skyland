@@ -1,0 +1,13 @@
+name = "Sophisticated Backpack/Storage Emerald Upgrade"
+filename = "sophisticated_emerald_upgrade-1.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ea27e787895ecce621c49b9cbff0151c0f679dd2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8199407
+project-id = 1195981

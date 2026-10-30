@@ -1,0 +1,15 @@
+[general]
+	#Number of items to accumulate before dropping a compressed stack.
+	# Default: 64
+	# Range: 1 ~ 10000
+	aggregateAmount = 16
+	#Minimum number of items to accumulate before dropping a compressed stack. If less, drops as normal items.
+	# Default: 2
+	# Range: 1 ~ 10000
+	minAggregateAmount = 2
+	#Enable Chutes (and Smart Chutes) extracting and aggregating items up to aggregateAmount.
+	enableChuteAggregation = false
+	#Mode 1 (LIGHT): Accumulate items before processing (Balance preserved).
+	#Mode 2 (EFFICIENT): Process aggregated stacks in one operation (TPS priority, ignores balance).
+	#Allowed Values: LIGHT, EFFICIENT
+	processingMode = "LIGHT"

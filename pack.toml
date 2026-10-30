@@ -1,0 +1,13 @@
+name = "Skyland"
+author = "Luna-Terra"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "33aeabd114eed55113f83b7d56cb5ce8133d627857ba20ba43fd27cd704aa05e"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.265"

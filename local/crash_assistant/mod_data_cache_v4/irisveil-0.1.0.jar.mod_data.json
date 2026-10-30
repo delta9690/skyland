@@ -1,0 +1,1 @@
+{"jarName":"irisveil-0.1.0.jar","modId":"irisveil","name":"Iris Veil Compat","version":"0.1.0","mixinConfigs":["irisveil.mixins.veil.json","irisveil.mixins.iris.json"],"jarJarMods":[{"jarName":"glsl-transformer-2.0.1.jar","mixinConfigs":[],"jarJarMods":[],"pathFromJarJar":"/META-INF/jarjar/"}],"curseForgeHash":87786222,"modrinthHash":"0c30c1e72537d6db55e8d7f4d81d154e2333efcb"}

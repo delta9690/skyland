@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"create:sticky_mechanical_piston"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:piston_extension_pole"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

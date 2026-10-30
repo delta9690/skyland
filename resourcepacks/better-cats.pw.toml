@@ -1,0 +1,13 @@
+name = "Better Cats!"
+filename = "Better Cats v4.0 1.21.11.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "98520ec7b69c893e2b7a7881d980cae6dc98cddc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7662613
+project-id = 679207

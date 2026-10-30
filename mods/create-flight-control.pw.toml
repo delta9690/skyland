@@ -1,0 +1,13 @@
+name = "Create: Flight Control"
+filename = "create_flight_control-neoforge-0.8.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6efa89db07e45fe8687e8d1abe8ca284d3fb1630"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9313228
+project-id = 1605193

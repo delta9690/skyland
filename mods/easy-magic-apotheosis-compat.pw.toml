@@ -1,0 +1,13 @@
+name = "Easy Magic + Apotheosis Compat"
+filename = "easyapothcompat-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b4470f562fef0fb0c2ef14efdd0783bafa4d3aab"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8980618
+project-id = 1531461

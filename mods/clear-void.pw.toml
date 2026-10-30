@@ -1,0 +1,13 @@
+name = "Clear Void"
+filename = "clearvoid-mc1.21.1-1.3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5223ec7cccf1d7f4121e60295ac076f9e59aeee1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7177468
+project-id = 909467

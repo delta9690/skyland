@@ -1,0 +1,9 @@
+[
+  {"version":2},
+  {"recipe":"create:crafting/kinetics/deployer","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"chisel:chisel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:dandelion"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:andesite_funnel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:stripped_spruce_wood"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:handheld_worldshaper","components":"{\"create:placement_pattern\":\"solid\",\"create:shaper_block_used\":{Name:\"minecraft:grass_block\",Properties:{snowy:\"false\"}},\"create:shaper_brush\":\"sphere\",\"create:shaper_brush_params\":[I;4,1,1],\"create:shaper_placement_options\":\"merged\",\"create:shaper_tool\":\"clear\"}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
