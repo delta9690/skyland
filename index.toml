@@ -12098,11 +12098,6 @@ hash = "613a7fa70e1f16ef4325fcc01b5e383a1d4676dcf967a85be81a6b6fada5f46e"
 metafile = true
 
 [[files]]
-file = "mods/create-bits-n-tracks.pw.toml"
-hash = "4761d119f92ceb68e4c7aa702f7e3a07a08b3b643c929367f72307e2a8b0711f"
-metafile = true
-
-[[files]]
 file = "mods/create-bitterballen.pw.toml"
 hash = "ffc5326429e3f17c879b0a1f1a6580e76fa8fade71909585b62a2c09c024aca6"
 metafile = true
@@ -13149,11 +13144,6 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "ac16a3b327930527b268695816a0be285bdb0a384480b231c6fd2ccbe87f401f"
-metafile = true
-
-[[files]]
-file = "mods/tectonic.pw.toml"
-hash = "d3a371e1c66c94c2c0464a50d68aa090b0258085b29e23d0c35c2b7d6fdf783c"
 metafile = true
 
 [[files]]
