@@ -152,7 +152,7 @@ oceanFloorMinDepth = 8
 # Default: 40
 # Range: 1 ~ 2000
 oceanFloorMaxDepth = 40
-#Fluid block used by the optional ocean layer. Accepted values: water, lava.
+#Source-fluid block used by the optional ocean layer. Use a registered block id, such as minecraft:water.
 oceanBlockType = "water"
 #How far below a structure footprint to scan for support.
 # Default: 48

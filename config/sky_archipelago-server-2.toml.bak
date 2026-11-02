@@ -44,3 +44,7 @@ structurePlacementCrashShieldStrict = false
 # Default: 30
 # Range: 1 ~ 3600
 structurePlacementCrashShieldRateLimitSeconds = 30
+#Place category-colored wool pillars and log coordinates for structure generation attempts.
+structureAttemptPillarsEnabled = false
+#Serialize final structure placement mutations for compatibility with parallel worldgen mods such as C2ME. Disable only for benchmarking or debugging.
+serializeStructurePlacementForParallelWorldgen = true

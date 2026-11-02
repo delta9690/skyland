@@ -1,13 +1,13 @@
 name = "Sky Archipelago"
-filename = "sky_archipelago-1.3.6.jar"
+filename = "sky_archipelago-1.4.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9594e849d072021bf4b0d7563b48e4765a0f59ae"
+hash = "ac462047df2c3887dc7b38b47af247c12293a11e"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8481456
+file-id = 9383224
 project-id = 1528077

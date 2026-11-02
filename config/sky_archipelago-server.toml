@@ -2,12 +2,6 @@
 structureDebugEnabled = false
 #Broadcast accepted POI coordinates in server chat for debugging.
 structureDebugBroadcastEnabled = false
-#Emit detailed accepted/rejected structure placement logs.
-structureVerboseLogsEnabled = false
-#Suppress per-structure verbose logs for SMALL LAND placements; aggregate summary still records them.
-suppressSmallLandVerboseLogs = false
-#When enabled, only emit verbose logs related to UNDERGROUND structure placement.
-undergroundVerboseOnly = false
 #Emit periodic worldgen cache metrics (hit/miss/eviction age) for tuning cache unload behavior.
 cacheMetricsLogsEnabled = false
 #Enable adaptive TTL tuning for the worldgen column cache.
@@ -52,3 +46,7 @@ serializeStructurePlacementForParallelWorldgen = true
 strongholdCompactMode = false
 #Emit periodic worldgen performance metrics. Intended for profiling; includes terrain and structure timings.
 worldgenPerformanceMetricsEnabled = false
+#Place river debug wool pillars: blue lake centers, cyan channel centerlines, and white waterfall lips.
+riverDebugPillarsEnabled = false
+#Emit the first 96 slow cold-worldgen events (terrain, river planning, and column resolution). Enable only while diagnosing new-world startup stalls.
+worldgenStartupDiagnosticsEnabled = false

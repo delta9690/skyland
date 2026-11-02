@@ -48,3 +48,7 @@ structurePlacementCrashShieldRateLimitSeconds = 30
 structureAttemptPillarsEnabled = false
 #Serialize final structure placement mutations for compatibility with parallel worldgen mods such as C2ME. Disable only for benchmarking or debugging.
 serializeStructurePlacementForParallelWorldgen = true
+#Experimental: retain only a verified native start-to-portal path when fitting strongholds on islands.
+strongholdCompactMode = false
+#Emit periodic worldgen performance metrics. Intended for profiling; includes terrain and structure timings.
+worldgenPerformanceMetricsEnabled = false
