@@ -11,12 +11,15 @@
 	fillStepMb = 250
 
 [sink]
-	#ON by default. Let's Do (Farm & Charm / Candlelight / Bakery) sinks and
-	#the Alpine Whispers bathtub no longer fill for free:
-	#Sinks: pipes (Create, or any mod exposing a fluid handler on the bottom
-	#face) feed an internal buffer; the player fills the basin by right-clicking
-	#the faucet when the buffer holds at least fillCostMb.
-	#Bathtub: right-click (hold) draws water from an adjacent supply until full.
+	#ON by default. Let's Do sinks (Farm & Charm / Candlelight / Bakery /
+	#Alpine Whispers) and the Alpine Whispers bathtub no longer fill for free.
+	#Farm & Charm-style sinks: pipes (Create, or any mod exposing a fluid handler
+	#on the bottom face) feed an internal buffer; the player fills the basin by
+	#right-clicking the faucet when the buffer holds at least fillCostMb.
+	#Alpine Whispers sink and bathtub: pipes feed the fixture (sink: bottom or
+	#back; bathtub: any side of the tap end except the top) and the tap only runs
+	#while that water lasts, closing itself when it runs dry; the bathtub also
+	#drinks from a tank it touches.
 	#A no-op unless one of those mods is installed. Set false to restore their
 	#vanilla behaviour.
 	requirePipeSupply = true
@@ -25,6 +28,7 @@
 	# Range: 1 ~ 1000000
 	bufferCapacityMb = 2000
 	#Millibuckets drawn from the buffer each time the player fills the basin.
+	#An Alpine Whispers basin fills in three steps, each costing a third of this.
 	# Default: 1000
 	# Range: 1 ~ 1000000
 	fillCostMb = 1000
@@ -32,15 +36,11 @@
 	allowManualBucketFill = true
 
 [bathtub]
-	#Millibuckets a full Alpine Whispers bathtub holds. Larger = slower to fill.
+	#Millibuckets of water a full Alpine Whispers bathtub takes, drawn evenly
+	#while its tap runs.
 	# Default: 3000
 	# Range: 1 ~ 1000000
 	capacityMb = 3000
-	#Millibuckets pulled from an adjacent supply per right-click while filling
-	#the bathtub. Hold right-click to keep filling.
-	# Default: 100
-	# Range: 1 ~ 1000000
-	fillStepMb = 100
 
 [lamps]
 	#ON by default. Let's Do Furniture / Candlelight lamps and street lanterns,
@@ -84,8 +84,9 @@
 	#ON by default. A freestanding Create Train Navigator Advanced Display
 	#renders its texts only while a live rail from a Domestic Electrical Board
 	#reaches it (8 W, 12 V); unwired or unpowered = blank screen. Wiring any
-	#one block of a multi-block board powers the whole board. Displays built
-	#onto a moving contraption are never touched. A no-op unless Create Train
+	#one block of a multi-block board powers the whole board. Super-Glued
+	#displays and displays built onto a moving contraption or train need no
+	#power. A no-op unless Create Train
 	#Navigator is installed. Set false to hand displays back to Create Train
 	#Navigator (no node attached).
 	requirePower = true
@@ -158,6 +159,14 @@
 	#use their own heat models as if no temperature mod were installed. Cold
 	#Sweat's effects on players (heaters, radiators, aircon) are not affected.
 	affectGridDevices = false
+	#Enable Steam Hearth and Air Conditioning even without Cold Sweat.
+	#ON by default. When no temperature mod (Cold Sweat) is installed, the Steam
+	#Hearth (Multi Radiator) and the Aircon parts stay craftable and in the
+	#creative tab; they work as steam and air machines but change no temperature.
+	#Set false to withhold them unless a temperature mod is installed. The Steam
+	#Outlet is always available. Blocks already placed keep working either way.
+	#Takes effect when a world is next loaded.
+	climateBlocksWithoutTemperatureMod = true
 
 [telephoneVoice]
 	#A no-op unless Simple Voice Chat is installed. While a telephone call is
@@ -169,9 +178,10 @@
 	# Default: 5.0
 	# Range: 1.0 ~ 32.0
 	captureRadius = 5.0
-	#Blocks around the far phone within which the carried voice can be heard.
+	#Blocks around the far phone within which the carried voice can be heard. A phone
+	#is a small speaker: 8 at most (other sounds from a phone always carry 8 blocks).
 	# Default: 8.0
-	# Range: 1.0 ~ 64.0
+	# Range: 1.0 ~ 8.0
 	playbackRange = 8.0
 	#A faint hiss with the odd soft crackle, played from both phones for as long as
 	#a call is answered - mild by default. 0 turns it off, 1 is roughly four times
@@ -179,3 +189,69 @@
 	# Default: 0.25
 	# Range: 0.0 ~ 1.0
 	lineNoise = 0.25
+	#While a telephone call is answered, the sounds within 16 blocks of either phone
+	#(jukeboxes, note blocks, machines, bells, engines, mobs, footsteps...) are heard
+	#from the other one, as loud as they are at the phone. Jukebox songs join where the
+	#jukebox is in the song, and stop with it. Needs no other mod.
+	relayMusic = true
+	#Voice and sounds carried down a call come out of the far phone band-limited and
+	#coarsened, like audio through a low-bitrate phone line. False plays them as they are.
+	compressAudio = true
+
+[urbanDecor]
+	#ON by default. Urban Decor sinks, faucets and showers no longer run on
+	#nothing: Create pipes (back of the fixture, plus the bottom of a sink or
+	#faucet and the top of a shower) feed them, a faucet or shower also drinks
+	#from a tank it touches, and a tap that runs dry turns itself off.
+	#A no-op unless Urban Decor is installed.
+	requireSupply = true
+	#Millibuckets per second a running sink or faucet draws.
+	# Default: 50
+	# Range: 1 ~ 100000
+	tapMbPerSecond = 50
+	#Millibuckets per second a running shower draws.
+	# Default: 100
+	# Range: 1 ~ 100000
+	showerMbPerSecond = 100
+	#Millibuckets of water a toilet's cistern holds (Refurbished Furniture's holds one
+	#bucket). Pipes, buckets and bottles fill it; flushing needs it non-empty.
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	toiletCapacityMb = 1000
+	#Millibuckets of water a whole bathtub (both halves) holds; Refurbished Furniture's
+	#bath holds ten buckets. Pipes into either half, buckets and bottles fill it; the tub
+	#has no tap, so it simply fills while water runs in.
+	# Default: 10000
+	# Range: 1 ~ 10000000
+	bathtubCapacityMb = 10000
+	#Sitting in a bathtub that is at least 40% full washes every harmful effect off.
+	bathCleanses = true
+	#Seconds one washing machine cycle runs (it pauses while unpowered).
+	# Default: 30
+	# Range: 1 ~ 3600
+	washerCycleSeconds = 30
+	#Millibuckets of water one washing machine cycle uses, taken when it starts.
+	#Piped in through any side but the top and the door.
+	# Default: 500
+	# Range: 1 ~ 100000
+	washerWaterMb = 500
+	#Percent of its full durability each damaged item regains from a washing machine
+	#cycle (every curse on it is removed as well).
+	# Default: 20
+	# Range: 0 ~ 100
+	washerRepairPercent = 20
+	#Millibuckets a glass bottle takes from a running tap.
+	# Default: 250
+	# Range: 1 ~ 1000000
+	bottleCostMb = 250
+	#A running shower washes every harmful effect off whoever stands under it.
+	showerCleanses = true
+	#A running shower also gives whoever stands under it a gentle Regeneration.
+	showerRegeneration = true
+
+[radioTelephone]
+	#Lets players tick "Keep chunk loaded" in a Radio Telephone's settings: the phone
+	#then keeps its own chunk loaded and ticking, so it rings and answers with nobody
+	#nearby. False: the option does nothing, and chunks phones held are let go when
+	#the world loads.
+	allowChunkLoading = true
