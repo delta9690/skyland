@@ -1,13 +1,13 @@
 name = "Cynosure"
-filename = "cynosure-1.0.4-neoforge-1.21.1.jar"
+filename = "cynosure-1.0.6-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "8ad98122cd7393e1300448fdff2bf1a1e253f5bb"
+hash = "cdebfeb910f38f085079fd1f4ad7656842e64e67"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9409881
+file-id = 9411095
 project-id = 1259952

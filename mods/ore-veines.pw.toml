@@ -1,13 +1,13 @@
 name = "Ore Veines & Pockets"
-filename = "ore_veines-neoforge-1.21.1-0.0.8.jar"
+filename = "ore_veines-neoforge-1.21.1-0.0.16.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "7e28f1f14fb19cdd4d1310fc4eb4738f64edf289"
+hash = "c94f6a5290cfc1e813ed10d583ef7cb92f464639"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8171769
+file-id = 8843457
 project-id = 1366853

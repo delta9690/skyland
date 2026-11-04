@@ -1,13 +1,13 @@
 name = "Distant thunders"
-filename = "distantthunders-mc1.21.1-neoforge-1.1.0.jar"
+filename = "distantthunders-mc1.21.1-neoforge-1.1.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d86e199110674c0c1718bc7843a98adf51bbcb33"
+hash = "d9632b20ea5f8a0237e27f3be675d055eebc9686"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8506385
+file-id = 9433333
 project-id = 1534382
