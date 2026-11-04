@@ -11709,10 +11709,6 @@ file = "mods/Immersive-weathering-V1.0.4-neoforge-beta.jar"
 hash = "3290e96d1df45b8e3fbdbc7027f86cdb72b4f3a4e8a26d62ffe2d504c57a3c4d"
 
 [[files]]
-file = "mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar"
-hash = "2c35206d3dbe2d1b81bd80fcdb6b55e6a9230f67b00e5206ffbd9ed295877d4e"
-
-[[files]]
 file = "mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.60.jar"
 hash = "b2563ad599d8e75a0ab6fb467143bf0922c3fbcf8bb6f459d9802b6b20ee3ed9"
 
@@ -11855,11 +11851,6 @@ hash = "69af4338f9970b764e9b6ff981b7bf9ec51fc8892241f24803277c0ff6edf42f"
 metafile = true
 
 [[files]]
-file = "mods/better-chunk-loading-forge-fabric.pw.toml"
-hash = "4cfcccd6c2191de2b0d595d21012371356b0f07f66512567bc6484b4d2f3d98c"
-metafile = true
-
-[[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "d58e02fd901943506422b03463b6116c1ebcb27204e369f4e9551218a5ba4c1a"
 metafile = true
@@ -11912,10 +11903,6 @@ metafile = true
 file = "mods/cbcmw-recipe-fix.pw.toml"
 hash = "7ba276f6ca489f93fd61649c175729b3a8761dc97a7c548b526ce169007c69fd"
 metafile = true
-
-[[files]]
-file = "mods/cc-tweaked-1.21.1-forge-1.120.2.jar"
-hash = "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
 
 [[files]]
 file = "mods/cc-tweaked-1.21.1-forge-1.121.0.jar"
@@ -12387,10 +12374,6 @@ file = "mods/createenergycannons-neoforge-0.2.3+1.21.1.jar"
 hash = "922f1aaca0838502022bb7d679fe7c3aac5179edb9a18645d3df469578b2580d"
 
 [[files]]
-file = "mods/createinteroperable-0.1.125-experimental-hotfix.jar"
-hash = "723b5f6779a80e6c7f916fe35f5ae1060b65a879104ed91f3fa0ce55fa36c05c"
-
-[[files]]
 file = "mods/createinteroperable-0.1.240-experimental.jar"
 hash = "af4a4db5b4e2fbb9d32c7133df3cb2255074b4e7b8e7dbb61b95112cea609c20"
 
@@ -12717,10 +12700,6 @@ file = "mods/jei-1.21.1-neoforge-19.70.0.467.jar"
 hash = "1c4309153cbdb2d0a33a6f240ab97d8f0b4daaba2f7ebabf6c28624f8fba873a"
 
 [[files]]
-file = "mods/jei-1.21.1-neoforge-19.70.0.469.jar"
-hash = "9ab82d9bdbc8d9a08b80bc2023e1d886f6335b92f937d3afac878c9ea995dc33"
-
-[[files]]
 file = "mods/jei.pw.toml"
 hash = "4a5ea596148af390e53eaa5225a5569f15cda6ace0c51edf9c6b175cf6030322"
 metafile = true
@@ -12853,10 +12832,6 @@ metafile = true
 file = "mods/mmmmmmmmmmmm.pw.toml"
 hash = "9f49c7407a38c6d066c22d315754378e3d1babb4673d62c1531a1453d74090e9"
 metafile = true
-
-[[files]]
-file = "mods/mods.txt"
-hash = "9935c58d09a9b0944f08e88c1d6c6bdce6c6e9bc766f4b5d0a97bc7b3b698354"
 
 [[files]]
 file = "mods/moonlight-1.21.1-3.8.0-neoforge.jar"
@@ -13001,10 +12976,6 @@ hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
 metafile = true
 
 [[files]]
-file = "mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar"
-hash = "cc509060833736fb650aa4c36b1ce33a7eeeb9ca6e9f8e80a7c951c9e7487b24"
-
-[[files]]
 file = "mods/rolled-homongenous-forked.pw.toml"
 hash = "6b7886d06af2276c660a5946fc01b0b55790004720461f49773961c7cce6fa47"
 metafile = true
@@ -13033,10 +13004,6 @@ metafile = true
 file = "mods/shatterbyte-lib.pw.toml"
 hash = "4f38a1932a493c7b100f13356c65bf1cc4d43e4cb3430d428202452d1d5800a0"
 metafile = true
-
-[[files]]
-file = "mods/shellbound_for_airship-1.0.0-neoforge.jar"
-hash = "371dfdd024ddee0a01d61b083477ceaccdc7d3b19e31eb82bf54b72f75cdb761"
 
 [[files]]
 file = "mods/signtweaks.pw.toml"
@@ -13089,44 +13056,12 @@ hash = "8f824ef4cc4fa275ffc195f698d013a18da7ff107dcbee218cc4b53c8a718adf"
 metafile = true
 
 [[files]]
-file = "mods/sophisticatedbackpacks-1.21.1-3.26.17.2232.jar"
-hash = "0adf5d847a8956142f10608dc724939482dad3bde62d078ba51a1af73819ae2d"
-
-[[files]]
-file = "mods/sophisticatedbackpacks-1.21.1-3.26.19.2243.jar"
-hash = "e69a7cc95fa4d70194f14635e3e55ce77853792da7e249fc22c1b4fefe8cd00e"
-
-[[files]]
 file = "mods/sophisticatedbackpacks-1.21.1-3.26.20.2244.jar"
 hash = "4104a0f47ee849a8d610faa76eb652453d7fbf98a38ff2516b972f70fc9d9edf"
 
 [[files]]
-file = "mods/sophisticatedcore-1.21.1-1.5.19.2434.jar"
-hash = "fe544662d105d9791c8a1db75f297351957d3e702546154f1493cc9869d4f2af"
-
-[[files]]
-file = "mods/sophisticatedcore-1.21.1-1.5.23.2446.jar"
-hash = "16970fe1b269682c64c543f5f5584c6d4b0822337670308250e4ef4687644ac8"
-
-[[files]]
-file = "mods/sophisticatedcore-1.21.1-1.5.25.2451.jar"
-hash = "42dcb8a97a641263b51dbebc5ddf94b01305149d151000650165550d331eb645"
-
-[[files]]
 file = "mods/sophisticatedcore-1.21.1-1.5.28.2458.jar"
 hash = "27ce6ea0c2803186834d8329a738d5717870465c4fc09194f1ae4b2804c44f87"
-
-[[files]]
-file = "mods/sophisticatedstorage-1.21.1-1.6.10.2206.jar"
-hash = "8277443959fbd9f2d0101bb13b75b4f35e9c3bc123854e4ece8ee7f287a5ad8d"
-
-[[files]]
-file = "mods/sophisticatedstorage-1.21.1-1.6.13.2216.jar"
-hash = "de97950b1ca9e662671c079c0a078e010133fb03bece97a776c3bb417273f216"
-
-[[files]]
-file = "mods/sophisticatedstorage-1.21.1-1.6.15.2219.jar"
-hash = "f2b65e0ba18572e500c091f2843eab8e737550431ed619aea81767cf982cf00c"
 
 [[files]]
 file = "mods/sophisticatedstorage-1.21.1-1.6.16.2222.jar"
