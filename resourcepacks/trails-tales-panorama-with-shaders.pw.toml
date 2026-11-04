@@ -1,0 +1,13 @@
+name = "Trails & Tales Panorama with Shaders"
+filename = "1.20 PwS [1.21.x].zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "477a8a0320099f03c82f004e8a7624387307632a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7368476
+project-id = 994472
